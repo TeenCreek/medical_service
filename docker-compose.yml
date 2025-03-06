@@ -8,7 +8,7 @@ services:
     environment:
       - DB_HOST=db
       - DB_PORT=5432
-      - DB_NAME=wallet
+      - DB_NAME=mis
       - DB_USER=postgres
       - DB_PASS=${DB_PASS}
       - SECRET_KEY=${SECRET_KEY}
@@ -24,7 +24,7 @@ services:
     image: postgres:latest
     restart: always
     environment:
-      POSTGRES_DB: wallet
+      POSTGRES_DB: mis
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: ${DB_PASS}
     ports:
